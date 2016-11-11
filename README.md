@@ -1,2 +1,5 @@
-# week-10-class-2
-In Class Material
+AGENDA
+- Grid System
+- Gradient
+- Blend Background
+- Lab - Working on Assignments
