@@ -59,12 +59,12 @@ THE PART OF CSS HANDLING BACKGROUND
     background-repeat: no-repeat;
     background-size: cover;
     
-    background-color: darkgoldenrod;
+    background-color: darkblue;
     
     /*
     Reference:
     https://css-tricks.com/almanac/properties/b/background-blend-mode/ */
-    background-blend-mode: normal;
+    background-blend-mode: multiply;
                          /* 
                          +-----------------+
                          | Blending modes: |
