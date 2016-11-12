@@ -3,48 +3,88 @@ body {
     padding: 0;
 }
 
-.box {
-    padding: 0 0 100% 0;
+/* LINEAR GRADIENT */
+.box:nth-child(1) {
+    
+    padding: 0 0 50% 0;
 
-    background: #1e5799; /* Very old browsers */
+    background: #deb887; /* Very old browsers */
 
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', 
-                                                       endColorstr='#7db9e8',
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#deb887', 
+                                                       endColorstr='#ffe4c4',
                                                        GradientType=0); /* IE6-9 */
 
     background: -moz-linear-gradient(top, 
-                                     #1e5799 0%, 
-                                     #2989d8 50%, 
-                                     #207cca 51%, 
-                                     #7db9e8 100%); /* FF3.6+ */
+                                     burlywood 0%,
+                                     bisque 10%,
+                                     floralwhite 20%,
+                                     burlywood 30%,
+                                     bisque 40%,
+                                     floralwhite 50%,
+                                     burlywood 60%,
+                                     bisque 70%,
+                                     floralwhite 80%,
+                                     burlywood 90%,
+                                     bisque 100%); /* FF3.6+ */
 
     background: -webkit-gradient(linear, 
                                  left top, 
                                  left bottom, 
-                                 color-stop(0%, #1e5799), 
-                                 color-stop(50%, #2989d8), 
-                                 color-stop(51%, #207cca), 
-                                 color-stop(100%, #7db9e8)); /* Chrome, Safari4+ */
+                                 color-stop(0%, burlywood), 
+                                 color-stop(10%, bisque), 
+                                 color-stop(20%, floralwhite), 
+                                 color-stop(30%, burlywood),
+                                 color-stop(40%, bisque), 
+                                 color-stop(50%, floralwhite), 
+                                 color-stop(60%, burlywood), 
+                                 color-stop(70%, bisque),
+                                 color-stop(80%, floralwhite), 
+                                 color-stop(90%, burlywood), 
+                                 color-stop(100%, bisque)); /* Chrome, Safari4+ */
 
     background: -webkit-linear-gradient(top, 
-                                        #1e5799 0%,
-                                        #2989d8 50%,
-                                        #207cca 51%,
-                                        #7db9e8 100%); /* Chrome10+, Safari5.1+ */
+                                        burlywood 0%,
+                                        bisque 10%,
+                                        floralwhite 20%,
+                                        burlywood 30%,
+                                        bisque 40%,
+                                        floralwhite 50%,
+                                        burlywood 60%,
+                                        bisque 70%,
+                                        floralwhite 80%,
+                                        burlywood 90%,
+                                        bisque 100%); /* Chrome10+, Safari5.1+ */
 
     background: -o-linear-gradient(top, 
-                                   #1e5799 0%,
-                                   #2989d8 50%,
-                                   #207cca 51%,
-                                   #7db9e8 100%); /* Opera 11.10+ */
+                                   burlywood 0%,
+                                   bisque 10%,
+                                   floralwhite 20%,
+                                   burlywood 30%,
+                                   bisque 40%,
+                                   floralwhite 50%,
+                                   burlywood 60%,
+                                   bisque 70%,
+                                   floralwhite 80%,
+                                   burlywood 90%,
+                                   bisque 100%); /* Opera 11.10+ */
 
     background: -ms-linear-gradient(top, 
-                                    #1e5799 0%,
-                                    #2989d8 50%,
-                                    #207cca 51%,
-                                    #7db9e8 100%); /* IE10+ */
-
-    background: linear-gradient(to bottom right, 
+                                    burlywood 0%,
+                                    bisque 10%,
+                                    floralwhite 20%,
+                                    burlywood 30%,
+                                    bisque 40%,
+                                    floralwhite 50%,
+                                    burlywood 60%,
+                                    bisque 70%,
+                                    floralwhite 80%,
+                                    burlywood 90%,
+                                    bisque 100%); /* IE10+ */
+    
+    /*
+    Reference:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
+    background: linear-gradient(to bottom, 
                                 burlywood 0%,
                                 bisque 10%,
                                 floralwhite 20%,
@@ -56,4 +96,29 @@ body {
                                 floralwhite 80%,
                                 burlywood 90%,
                                 bisque 100%); /* W3C */
+}
+
+
+
+/* RADIAL GRADIENT */
+.box:nth-child(2) {
+    
+    padding: 0 0 50% 0; 
+    
+    /*
+    Reference:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient */
+    background: radial-gradient(circle farthest-corner at 50% 50%, 
+                                burlywood 0%, 
+                                bisque 10%, 
+                                floralwhite 20%,
+                                burlywood 30%, 
+                                bisque 40%, 
+                                floralwhite 50%,
+                                burlywood 60%, 
+                                bisque 70%, 
+                                floralwhite 80%,
+                                burlywood 90%, 
+                                bisque 100%); /* W3C */
+    
 }
